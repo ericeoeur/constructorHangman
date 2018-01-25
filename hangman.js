@@ -15,7 +15,7 @@ let Letter = function (peanut) {
 
 let Word = function (newWord) {
     this.word = newWord;
-    this.letterObjs = []; //an array that stores letter objects
+    this.letterObjs = []; 
     this.found = false;
 
     this.getLetters = function () {
@@ -25,8 +25,7 @@ let Word = function (newWord) {
     };
 
     this.foundTheWord = function () {
-        // loop through all the letter objects and return true if all show properties are true
-        this.found = this.letterObjs.every(function (letterObj) {
+      this.found = this.letterObjs.every(function (letterObj) {
             return letterObj.show;
         });
 
