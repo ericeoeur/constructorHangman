@@ -31,9 +31,7 @@ let Word = function (newWord) {
 
         return this.found;
     }
-    /**
-     * returns whether the guessed letter was found or not
-     */
+    
     this.checkLetters = function (guessedLetter) {
         let outcome = 0;
         this.letterObjs.map(function (letterObj) {
@@ -44,9 +42,7 @@ let Word = function (newWord) {
         });
         return outcome;
     }
-    /**
-     * return the rendered view
-     */
+    
     this.renderOutcome = function () {
         let outcome = "";
         this.letterObjs.map(function (letterObj) {
